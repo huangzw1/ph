@@ -7,7 +7,7 @@ ADD ./ /usr/local/ph
 # 设置工作目录
 WORKDIR /usr/local/ph
 RUN apt-get update
-RUN apt-get install python-setuptools python-dev build-essential
+RUN apt-get install -y python-setuptools python-dev build-essential
 RUN easy_install pip
 # 安装requirements
 RUN pip install --no-cache-dir -r requirements.txt
