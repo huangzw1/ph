@@ -1,5 +1,5 @@
 # 基础镜像信息
-FROM registry.cn-hangzhou.aliyuncs.com/cashbus/pythonbase
+FROM registry.cn-hangzhou.aliyuncs.com/rainman1/pythonflask
 # 创建目录
 RUN mkdir -p /usr/local/ph
 # 拷贝文件
