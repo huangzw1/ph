@@ -11,7 +11,7 @@ RUN apt-get install -y python2.7
 RUN apt-get install -y python-setuptools
 RUN apt-get install -y python-pip
 # 安装requirements
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install flask
 CMD ["python", "./main.py"]
 EXPOSE 5000
 
