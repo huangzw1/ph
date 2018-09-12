@@ -6,7 +6,7 @@ RUN mkdir -p /usr/local/ph
 ADD ./ /usr/local/ph
 # 设置工作目录
 WORKDIR /usr/local/ph
-RUN 
+RUN apt-get update
 RUN apt-get install python-dev python-pip
 # 安装requirements
 RUN pip install --no-cache-dir -r requirements.txt
